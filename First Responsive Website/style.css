@@ -174,23 +174,21 @@
     justify-content:space-between;
     align-items:center;
     margin-top: 40px;
-    flex-wrap: nowrap;
 }
-
 .testimonials .container .contentBx{
     background:#fff;
     padding:60px 50px;
-    margin:10px;
-    width:550px;
+    width: 550px;
+    margin: 10px;
     display: flex;
-    justify-content:center;
-    align-items: center;
-    text-align: left; 
+    justify-content: center;
+    align-items:center;
+    text-align:left;
 }
 .testimonials .container .contentBx p{
     font-style: italic;
 }
-.testimonials .container .contentBx h2{
+.testimonials .container .contentBx h3{
     width: 100%;
     text-align:end;
     font-weight:500;
@@ -283,7 +281,7 @@
 .fa-heart{
     color:red;
 }
-@media(max-width:991px){
+/* @media(max-width:991px){
     .banner{
         padding: 50px;
     }
@@ -340,6 +338,7 @@
         padding: 60px 40px;
         max-width:550px;
         margin-bottom: 40px;
+        flex-wrap: wrap;
     }
     .testimonials .contenBx:last-child{
         margin-bottom: 0px;
@@ -355,4 +354,4 @@
     .footer ul{
         margin-bottom: 20px;
     }
-}
+} */
