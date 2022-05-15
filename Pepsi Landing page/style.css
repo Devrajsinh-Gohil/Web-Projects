@@ -43,11 +43,12 @@ header ul{
 header ul li a{
     display: inline-block;
     color: #fff;
-    font-weight: 400;
+    font-weight: 00;
     margin-left: 40px;
     text-decoration: none;
     /* cursor: pointer; */
 }
+
 .content{
     position: relative;
     display: flex;
