@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Pepsi</title>
     <link rel="icon" src="img/logo.png">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <section class="sec">
-        <header>
-            <a href="#"><img src="img/logo.png" alt=""></a>
+        <header class="nav">
+            <a href="#"><img src="img/logo.png" alt="" class="logo"></a>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Products</a></li>
@@ -19,6 +24,34 @@
                 <li><a href="#">Contact</a></li>
             </ul>
         </header>
+        <div class="content">
+            <div class="textBx">
+                <h2>That's What<br><span>I like</span></h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non adipisci expedita ratione, accusantium atque nemo eveniet dolore, velit quibusdam delectus ad unde odit tempora at autem magnam? Tempore, ea asperiores. Labore excepturi quisquam fuga at?</p>
+                <a href="#">View All Products</a>
+            </div>
+            <div class="imgBx"><img src="img/pepsi001.png" alt="" class="pepsi"></div>
+        </div>
+        <ul class="thumb">
+            <li><img src="img/pepsi001.png" alt="" onclick="imgSlider('img/pepsi001.png');changeBgColor('#0062be')"></li>
+            <li><img src="img/pepsi002.png" alt="" onclick="imgSlider('img/pepsi002.png');changeBgColor('#cc1027')"></li>
+            <li><img src="img/pepsi003.png" alt="" onclick="imgSlider('img/pepsi003.png');changeBgColor('#1e1e1e')"></li>
+        </ul>
+        <ul class="social">
+            <li><a href="https://www.instagram.com/devrajsinhg0hil/"target="_blank"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://twitter.com/DevrajsinhGohi5"target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/devrajsinh-gohil-8b0338208"target="_blank"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="https://github.com/Devrajsinh03"target="_blank"><i class="fa fa-github"></i></a></li>
+        </ul>
     </section>
+    <script type="text/javascript">
+        function imgSlider(anything) {
+            document.querySelector('.pepsi').src = anything;
+        }
+        function changeBgColor(color){
+            const sec = document.querySelector('.sec');
+            sec.style.backgroundColor = color;
+        }
+    </script>
 </body>
 </html>
